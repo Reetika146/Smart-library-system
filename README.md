@@ -24,8 +24,6 @@ Node* insert(Node* root, int value) {
     return root;
 }
 
-
-
 bool search(Node* root, int value) {
     if (root == nullptr)
         return false;
@@ -37,9 +35,6 @@ bool search(Node* root, int value) {
     else
         return search(root->right, value);
 }
-
-
-
 void displayAscending(Node* root) {
     if (root == nullptr)
         return;
@@ -48,8 +43,6 @@ void displayAscending(Node* root) {
     cout << root->data << " ";
     displayAscending(root->right);
 }
-
-
 int main() {
     Node* root = nullptr;
     int choice, bookID;
